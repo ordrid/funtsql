@@ -1,1 +1,1 @@
-# T-SQL Fundamentals Exercises Solutions
+# Filling up the gaps in my T-SQL knowledge
