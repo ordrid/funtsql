@@ -129,3 +129,16 @@ WHERE custid = 71
 GROUP BY empid, YEAR(orderdate)
 HAVING COUNT(*) > 1
 ORDER BY empid, orderyear;
+
+-- Can order by values that are not returned
+SELECT empid
+    , firstname
+    , lastname
+    , country
+FROM HR.Employees
+ORDER BY hiredate;
+
+-- Cannot order by values not return with DISTINCT is used
+SELECT DISTINCT country
+FROM HR.Employees
+ORDER BY empid;
