@@ -73,4 +73,4 @@ SELECT custid
     , region
     , city
 FROM Sales.Customers
-WHERE region IS DISTINCT FROM @region;
+WHERE region IS DISTINCT FROM @region>;
